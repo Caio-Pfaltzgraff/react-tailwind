@@ -7,6 +7,8 @@ const Article = ({ title, text, tags, image, alt }) => {
                     <p className="text-azul-200 dark:text-gray-400" key={index}>{content}</p>
                 ))}
             </div>
+            { image && <img className="sm:p-4" src={image} />}
+            { image && alt && <span className="sr-only">{alt}</span>}
         </div>
     )
 }
