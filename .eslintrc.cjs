@@ -16,5 +16,7 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    "react/prop-types": "off", //Desativa a validação das props
+    "react/jsx-key": "off" //Desativa a obrigação de fornecer um key
   },
 }
