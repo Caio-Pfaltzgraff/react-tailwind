@@ -11,7 +11,7 @@ const safeSubmit = (event) => {
         <form onSubmit={safeSubmit} className=" h-full flex flex-col items-center justify-center gap-10 -mt-20 mx-5">
             <input type="text" className="newsletter-input" required placeholder="Insira seu nome..." />
             <input type="email" className="newsletter-input" required placeholder="Insira seu e-mail..." />
-            <button type="submit" className="py-1 px-5 w-full max-w-sm bg-azul-100 dark:bg-dark-200 rounded-full text-gray-200 uppercase outline-none hover:animate-pulse hover:shadow-md hover:shadow-gray-500 hover:dark:shadow-black">Seguir</button>
+            <button type="submit" className="newsletter-button">Seguir</button>
         </form>
     )
 }
