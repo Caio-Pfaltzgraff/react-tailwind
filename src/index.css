@@ -13,14 +13,18 @@
 
 @layer components {
     .newsletter-input {
-        @apply py-2 pl-5 w-full max-w-lg dark:bg-dark-200 text-dark-200 dark:text-gray-200 rounded-md outline-none placeholder:text-gray-400 placeholder:dark:text-gray-600 placeholder:text-sm placeholder:uppercase placeholder:font-bold focus:border-2 focus:border-azul-200 focus:dark:border-azul-100 invalid:focus:border-2 invalid:focus:border-red-400 invalid:focus:dark:border-2 invalid:focus:dark:border-red-400;
+        @apply py-2 pl-5 w-full max-w-lg dark:bg-dark-200 text-dark-200 dark:text-gray-200 rounded-md outline-none placeholder:text-gray-400 placeholder:dark:text-gray-600 placeholder:text-sm placeholder:uppercase placeholder:font-bold focus:border-2 focus:border-azul-200 focus:dark:border-azul-100 invalid:focus:border-2 invalid:focus:border-red-400 invalid:focus:dark:border-2 invalid:focus:dark:border-red-400 caret-azul-200 dark:caret-azul-100;
     }
 
     .newsletter-button {
-        @apply py-1 px-5 w-full max-w-sm bg-azul-100 dark:bg-dark-200 rounded-full text-gray-200 uppercase outline-none hover:animate-pulse hover:shadow-md hover:shadow-gray-500 hover:dark:shadow-black;
+        @apply py-1 px-5 w-full max-w-sm bg-azul-100 dark:bg-dark-200 rounded-full text-gray-200 uppercase outline-none hover:animate-pulse hover:shadow-md hover:shadow-gray-500 hover:dark:shadow-black hover:-translate-y-1 hover:delay-200;
     }
 
     .newsletter-card {
         @apply p-5 bg-gray-200 dark:bg-dark-200 sm:rounded-xl sm:shadow-xl flex gap-2 flex-col items-center sm:hover:shadow-gray-600 sm:hover:dark:shadow-gray-700 sm:hover:shadow-lg;
+    }
+
+    .newsletter-tag {
+        @apply bg-azul-100 dark:bg-dark-100 px-4 py-1 rounded-full text-gray-200 text-xs font-bold uppercase hover:scale-110 hover:bg-gradient-to-r hover:from-azul-200 hover:to-azul-100;
     }
 }

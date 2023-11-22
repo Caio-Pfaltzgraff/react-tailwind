@@ -3,7 +3,7 @@ const Article = ({ title, text, tags, image, alt }) => {
         <div className="newsletter-card">
             <h3 className="text-xl text-azul-200 dark:text-gray-200 font-bold">{title}</h3>
             <div className="w-full flex-row justify-end gap-2 pr-5 hidden sm:flex">
-                {tags.map((tag) => <span className="bg-azul-100 dark:bg-dark-100 px-4 py-1 rounded-full text-gray-200 text-xs font-bold uppercase hover:bg-azul-200 hover:scale-110" key={tag}>{tag}</span>)}
+                {tags.map((tag) => <span className="newsletter-tag" key={tag}>{tag}</span>)}
             </div>
             <div className="grid gap-1">
                 {text.map((content, index) => (
